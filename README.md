@@ -1,3 +1,3 @@
 # Spring-Core---Ultimate-Guide
 
-Followig udemy course here: ('https://github.com/Light668/Spring-Core---Ultimate-Guide.git')
+Followig udemy course here: (https://www.udemy.com/course/learn-spring-5-core-from-scratch/)
