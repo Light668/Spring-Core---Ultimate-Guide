@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="product1" class="com.light.spring.core.Product">
+		<constructor-arg name="productId" value="A-123"></constructor-arg>
+		<constructor-arg name="productName" value="Laptop"></constructor-arg>
+		<constructor-arg name="productDescription" value="Some Laptop"></constructor-arg>
+	</bean>
+	
+	<bean id="product2" class="com.light.spring.core.Product">
+		<constructor-arg name="productId" value="B-456"></constructor-arg>
+		<constructor-arg name="productName" value="Mobile"></constructor-arg>
+		<constructor-arg name="productDescription" value="Some Mobile"></constructor-arg>
+	</bean>
+</beans>

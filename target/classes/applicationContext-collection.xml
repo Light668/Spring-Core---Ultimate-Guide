@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="myCollection"
+		class="com.light.spring.core.collections.CollectionHolder">
+		<property name="myList">
+			<list>
+				<value>Value 1</value>
+				<value>Value 2</value>
+			</list>
+		</property>
+
+		<property name="mySet">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>1</value>
+			</set>
+		</property>
+
+		<property name="myMap">
+			<map>
+				<entry key="name1" value="value 1"></entry>
+				<entry key="name2" value="value 2"></entry>
+				<entry key="name3" value="value 3"></entry>
+			</map>
+		</property>
+		<property name="myPlayers">
+			<list>
+				<ref bean="player1" />
+				<ref bean="player2" />
+				<ref bean="player3" />
+			</list>
+		</property>
+		<property name="properties">
+			<props>
+				<prop key="username">username</prop>
+				<prop key="password">password</prop>
+				<prop key="dbConnectionURL">URL</prop>
+			</props>
+		</property>
+
+	</bean>
+
+	<bean id="player1"
+		class="com.light.spring.core.collections.Player">
+		<constructor-arg name="name" value="player1"></constructor-arg>
+	</bean>
+
+	<bean id="player2"
+		class="com.light.spring.core.collections.Player">
+		<constructor-arg name="name" value="player2"></constructor-arg>
+	</bean>
+
+	<bean id="player3"
+		class="com.light.spring.core.collections.Player">
+		<constructor-arg name="name" value="player3"></constructor-arg>
+	</bean>
+</beans>
