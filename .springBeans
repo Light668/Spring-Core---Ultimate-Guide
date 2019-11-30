@@ -16,6 +16,7 @@
 		<config>src/main/resources/applicationContext-artist.xml</config>
 		<config>src/main/resources/applicationContext-innerbean.xml</config>
 		<config>src/main/resources/applicationContext-collection.xml</config>
+		<config>src/main/resources/applicationContext-collection-merge.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
