@@ -13,7 +13,6 @@ public class VehicleConfiguration {
 	}
 
 	@Bean
-	@Primary
 	public Vehicle car() {
 		return new Car();
 	}
